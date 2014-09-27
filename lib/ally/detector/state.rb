@@ -6,7 +6,6 @@ module Ally
     class State
       include Ally::Detector
 
-    
       def initialize(inquiry = nil)
         super # do not delete
         @states = [
@@ -77,7 +76,6 @@ module Ally
           @datapoints
         end
       end
-    
     end
   end
 end

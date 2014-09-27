@@ -10,7 +10,7 @@ describe Ally::Detector::State do
 
     it 'when theres a fake state' do
       subject.inquiry('my fake handle is new york88')
-        .detect.should == nil
+        .detect.should.nil?
     end
 
     it 'in a sentence' do
@@ -25,7 +25,7 @@ describe Ally::Detector::State do
 
     it 'when none exist' do
       subject.inquiry('Oh well, there are no states here, def not any near the greak lakes')
-        .detect.should == nil
+        .detect.should.nil?
     end
   end
 end
